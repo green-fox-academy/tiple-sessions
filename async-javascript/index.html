@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <button>Click</button>
+  <script>
+    const xhr = new XMLHttpRequest();
+    xhr.open('https://facebook.com');
+    xhr.addEventListener('readystatechange', (e) => {
+
+    })
+    setInterval(() => {
+      console.log(1);
+    }, 1000)
+    alert('valami')
+    document.querySelector('button').addEventListener('click', (err, valami) => {
+      if (err) throw err
+    })
+  </script>
+</body>
+</html>
